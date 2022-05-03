@@ -1,0 +1,180 @@
+.logo {
+  max-width: 64px;
+}
+
+.helper {
+  border: 1px solid;
+}
+
+.statistics {
+  font-size: 40px;
+}
+.statistics2 {
+  font-size: 18px;
+}
+
+.service-header {
+  font-size: 60px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.best-price {
+  margin-top: 50px;
+}
+
+.about-person {
+  position: relative;
+}
+.about-person .credentials {
+  position: absolute;
+  top: 0;
+}
+.about-person {
+  position: relative;
+}
+.about-person .credentials {
+  position: absolute;
+  bottom: 4px;
+  padding-left: 25px;
+  padding-right: 25px;
+  background-color: #fee600;
+}
+.credentials .role,
+.credentials .name {
+  line-height: 0.6em;
+}
+.credentials .name {
+  font-weight: bold;
+  color: #303030;
+}
+.credentials .role {
+  font-weight: bold;
+  color: #fff;
+  font-size: 0.6em;
+}
+.about-person {
+  display: flex;
+  align-items: center;
+}
+.head_title {
+  margin-bottom: 60px;
+}
+.separator2 {
+  height: 2px;
+  width: 60px;
+  margin: 20px 0px;
+  background: #000;
+}
+.separator3 {
+  height: 2px;
+  width: 50px;
+  margin: 10px auto;
+  background: #fff;
+}
+.single_about_left_text {
+  width: 80%;
+  margin: 40px auto;
+}
+/* h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  color: #000000;
+}
+h4,
+h5 {
+  font-weight: 300;
+  margin: 0;
+  line-height: 2rem;
+}
+h1 {
+  font-size: 3.75rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+}
+h2 {
+  font-size: 3rem;
+  line-height: 3rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+h3 {
+  font-size: 1.875rem;
+  line-height: 2.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+h4 {
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+h5 {
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  color: #223d61;
+}
+h6 {
+  font-size: 1rem;
+  margin-bottom: 0.9rem;
+}
+p {
+  line-height: 1.7rem;
+  margin-bottom: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+} */
+
+.main_events_area .single_events span {
+  display: inline-block;
+}
+.main_events_area .single_events p {
+  font-size: 1.875rem;
+  line-height: 2rem;
+}
+/* .main_events_area .single_events span.e_text {
+} */
+.main_events_area .single_events span.separator3 {
+  margin: 10px 50px;
+  color: white;
+}
+.main_events_area .single_events span.e_price {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+.main_events_area .single_events span.e_text1 {
+  margin-left: 20px;
+  color: #8e8e8e;
+}
+.main_events_area .single_events.events_btn .btn {
+  margin-top: 0px;
+}
+.blackbg {
+  background: #000;
+}
+.padding-top-60 {
+  padding-top: 5rem;
+}
+.padding-bottom-60 {
+  padding-bottom: 5rem;
+}
+.whitetext {
+  color: #fff;
+}
+/* .sections {
+  padding-top: 85px;
+  padding-bottom: 105px;
+  overflow: hidden;
+} */
+.service-img {
+  width: 266px;
+  height: 140px;
+  background-color: white;
+}

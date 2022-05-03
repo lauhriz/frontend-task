@@ -1,0 +1,227 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* .container {
+  width: 1150px;
+} */
+
+.blog-txt a {
+  transition: all 0.2s;
+}
+
+.blog-txt a:hover {
+  color: #000;
+  /* font-weight: 500; */
+}
+
+.blog-container h2 {
+  font-weight: 300;
+  font-size: 3.75rem;
+  padding-top: 65px;
+}
+
+/* reikejo sukurt atskira klase nes pjoves su buttonais */
+.nuoroda-temporary {
+  padding: 1%;
+  color: #989898;
+}
+/*  */
+.blog-container img {
+  padding: 15% 0 0 5%;
+  width: 100%;
+}
+
+.description h2 {
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.description p {
+  padding-right: 15%;
+  line-height: 1.35;
+  padding-bottom: 4%;
+}
+
+.date {
+  color: #000;
+  font-weight: 500;
+}
+
+.date-line::after {
+  content: "";
+  width: 55px;
+  display: block;
+  position: relative;
+  height: 2px;
+  background-color: black;
+}
+
+.description a {
+  border: 1px solid #d8d8d8;
+}
+
+.description a:hover {
+  border: 1px solid #000;
+}
+
+.button a {
+  border: 1px solid #000;
+  background-color: #000;
+  color: #fff;
+}
+
+.button {
+  padding-bottom: 10%;
+}
+
+/* .blog-inner-container {
+  width: 1150px;
+  margin: 0 auto;
+} */
+
+.blog-inner-container p {
+  font-size: 1, 2rem;
+  font-weight: 400;
+}
+
+.img-container {
+  max-width: 750px;
+}
+
+/* .blog-inner-container img {
+  max-width: 750px;
+  height: 100%;
+} */
+
+.blog-inner-text {
+  width: 750px;
+  margin: 0 auto;
+}
+
+.blog-inner-container h5 {
+  font-weight: 300;
+  font-size: 3.8rem;
+}
+
+.blog-inner-text p {
+  font-weight: 500;
+}
+
+.blog-inner-text::before {
+  content: "";
+  width: 55px;
+  display: block;
+  position: relative;
+  height: 2px;
+  background-color: black;
+}
+
+.sketching-container {
+  width: 750px;
+  margin: 0 auto;
+}
+
+.sketching-container h5 {
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+.sketching-container p {
+  font-weight: 500;
+}
+
+.line-container {
+  width: 780px;
+  margin: 0 auto;
+}
+
+.line-container p {
+  font-weight: 500;
+}
+
+.line-container p::after {
+  content: "";
+  width: 50px;
+  display: block;
+  position: relative;
+  height: 3px;
+  background-color: #000;
+  transform: translate(-60px);
+  top: -37px;
+}
+
+.sketching-text-container {
+  padding-left: 15%;
+}
+
+.sketching-text-container h5 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.sketching-text-container::before {
+  content: "";
+  width: 55px;
+  display: block;
+  position: relative;
+  height: 2px;
+  background-color: black;
+}
+
+.carousel-container {
+  background-color: #ffe1bd;
+}
+
+.carousel-container {
+  padding-bottom: 7%;
+  padding-left: 7%;
+}
+
+.row h4 {
+  font-weight: 700;
+  font-size: 2.25rem;
+}
+
+.row h4::after {
+  content: "";
+  width: 60px;
+  display: block;
+  position: relative;
+  height: 2px;
+  background-color: #000;
+  top: 1px;
+}
+
+.row p {
+  font-weight: 300;
+  font-size: 0.9rem;
+  color: #000;
+  padding-top: 1%;
+}
+
+@media (max-width: 768px) {
+  .blog-container .row {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .blog-container h2,
+  .blog-txt {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .nav-item {
+    text-align: center;
+  }
+  .blog-inner-container,
+  .blog-inner-text,
+  .sketching-container,
+  .line-container {
+    width: 100%;
+    padding: 2%;
+  }
+}

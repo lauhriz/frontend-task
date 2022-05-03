@@ -1,0 +1,52 @@
+.dash {
+  width: 3rem;
+  border: 1px black solid;
+  opacity: 100%;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .dash {
+    margin: auto;
+  }
+}
+
+/* instagram sekcija */
+.insta-picture {
+  width: 268px !important;
+  height: 268px !important;
+  margin: 0.35rem;
+}
+
+.col-md-15 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+@media (min-width: 992px) {
+  .col-md-15 {
+    width: 20%;
+    float: left;
+  }
+}
+
+/* fontai pradzia */
+
+/* h1 {
+  font-size: 4rem;
+  font-weight: 200;
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 3rem;
+  }
+} */
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+/* fontai pabaiga */

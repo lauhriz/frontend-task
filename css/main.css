@@ -1,0 +1,445 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::selection {
+  color: #000;
+  background-color: #f8d8b0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  /* Colors */
+  --color-gray-light-1: #989898;
+}
+
+/* NAVBAR */
+
+.navbar-brand {
+  max-width: 100px;
+}
+
+.clemo {
+  width: 100%;
+}
+
+.nav-link {
+  display: inline-block;
+  transition: all 0.2s;
+  font-weight: 500;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:active {
+  color: #000;
+}
+
+.navbar {
+  padding: 50px 0;
+}
+
+/* navbar hover underline */
+
+.nav-link.active::after {
+  content: "";
+  width: 50%;
+  display: block;
+  position: relative;
+  height: 2px;
+  background-color: #000;
+  top: 2px;
+  transition: all 0.2s;
+}
+
+/* navbar line under section */
+
+.nav-link:hover::after,
+.nav-link:active::after {
+  background-color: #000;
+}
+
+.line::after {
+  content: "";
+  width: 100%;
+  display: block;
+  position: relative;
+  height: 1px;
+  background-color: #d8d8d8;
+}
+
+/* CSS GRID */
+
+.showcase-grid {
+  display: grid;
+  grid-gap: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+.showcase-grid div img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-position: center;
+}
+.showcase-1 {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+}
+.showcase-2 {
+  grid-column: 1 /2;
+  grid-row: 3 / 6;
+}
+.showcase-3 {
+  grid-column: 2 / 3;
+  grid-row: 1 / 4;
+}
+.showcase-4 {
+  grid-column: 2 / 3;
+  grid-row: 4 / 6;
+}
+.showcase-5 {
+  grid-column: 3 / 4;
+  grid-row: 1 / 3;
+}
+.showcase-6 {
+  grid-column: 3 / 4;
+  grid-row: 3 / 6;
+}
+
+/* GRID OVERLAY */
+
+.grid-overlay {
+  display: inline-block;
+  position: relative;
+}
+
+.grid-overlay:before {
+  content: "";
+  position: absolute;
+  transform: translateX(-50%);
+  bottom: 0;
+  left: 50%;
+  height: 0;
+  width: 84%;
+  padding-bottom: 84%;
+  margin-bottom: 8%;
+  background-color: #ffe1bd;
+  opacity: 0;
+
+  transition: all 0.3s;
+}
+
+.grid-overlay:hover:before {
+  opacity: 0.9;
+}
+
+.text-box {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 84%;
+  padding-bottom: 84%;
+  height: 0;
+  margin-bottom: 8%;
+}
+
+.overlay-text {
+  text-decoration: none;
+  color: inherit;
+  display: none;
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 100%;
+  height: 100%;
+}
+
+.grid-overlay:hover .overlay-text {
+  display: flex;
+  color: inherit;
+}
+
+.overlay-heading {
+  font-weight: 800;
+  font-size: 40px;
+  margin: 0;
+}
+
+.overlay-paragraph {
+  font-weight: 500;
+  font-size: 18px;
+  margin: 0;
+}
+
+.stripe-bottom:after {
+  content: "";
+  display: block;
+  width: 55px;
+  height: 2px;
+  background-color: #000;
+}
+
+/* GRID RESPONSIVENES */
+
+@media (max-width: 992px) {
+  .showcase-grid {
+    /* grid-gap: 10px;
+    margin-bottom: 10px; */
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .showcase-1 {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+  }
+  .showcase-2 {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+  }
+  .showcase-3 {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+  }
+  .showcase-4 {
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+  }
+  .showcase-5 {
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+  }
+  .showcase-6 {
+    grid-column: 2 / span 1;
+    grid-row: 3 / span 1;
+  }
+}
+
+@media (max-width: 576px) {
+  .showcase-grid {
+    grid-gap: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
+
+  .showcase-1 {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+  }
+  .showcase-2 {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+  }
+  .showcase-3 {
+    grid-column: 1 / span 1;
+    grid-row: 4 / span 1;
+  }
+  .showcase-4 {
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+  }
+  .showcase-5 {
+    grid-column: 1 / span 1;
+    grid-row: 5 / span 1;
+  }
+  .showcase-6 {
+    grid-column: 1 / span 1;
+    grid-row: 6 / span 1;
+  }
+}
+/* black contactu forma p.s turi but kazkoks effectas ant submit? */
+
+input:focus ~ .floating-label,
+input:not(:focus):valid ~ .floating-label {
+  top: -20px;
+  bottom: 0px;
+  left: 0px;
+  font-size: 16px;
+  opacity: 1;
+  color: #696969;
+}
+textarea:focus ~ .floating-label,
+textarea:not(:focus):valid ~ .floating-label {
+  top: -25px;
+  bottom: 0px;
+  left: 0px;
+  font-size: 16px;
+  opacity: 1;
+  color: #696969;
+}
+textarea {
+  resize: none;
+  outline: 0;
+  border-width: 2px 0;
+  border-color: gray;
+  color: white;
+  width: 100%;
+  height: 80px;
+}
+input {
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: gray;
+  color: white;
+  width: 100%;
+}
+.logo {
+  font-size: 25px;
+}
+.logo:hover {
+  color: #ffcb93;
+}
+.contact-btn {
+  background: white;
+  color: black;
+}
+.contact-section {
+  color: white;
+  background-color: black;
+}
+.contact-bg {
+  background-color: black;
+  color: white;
+}
+.floating-label-group {
+  position: relative;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+.floating-label {
+  /* font-size: 20px; */
+  color: #696969;
+  position: absolute;
+  pointer-events: none;
+  top: 0px;
+  left: 0px;
+  transition: all 0.1s ease;
+}
+/* caruseles indikatoriai */
+.carousel-indicators {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  margin-bottom: 40px;
+}
+.carousel-indicators [data-bs-target] {
+  margin-right: 0;
+  margin-left: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: transparent;
+  background-clip: border-box;
+  border: 1px solid #000;
+  opacity: 1;
+}
+.carousel-indicators .active {
+  background-color: black;
+}
+
+/* butttonai*/
+.btn-white-white,
+.btn-black-color,
+.btn-white-color {
+  width: 160px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  padding-bottom: 10px;
+  font-size: 1rem;
+}
+
+.btn:focus {
+  box-shadow: none;
+}
+
+.btn-white-white {
+  border: 1px lightgrey solid;
+  background-color: white;
+  color: black;
+}
+
+.btn-white-white:hover {
+  border: 1px black solid;
+}
+
+.btn-black-color {
+  background-color: black;
+  color: white;
+}
+
+.btn-black-color:hover {
+  background-color: #ffe1bd;
+  color: black;
+}
+
+.btn-white-color {
+  border: 1px black solid;
+  background-color: white;
+  color: black;
+}
+
+.btn-white-color:hover {
+  background-color: #ffe1bd;
+}
+
+.btn-black-border:hover {
+  border: 1px solid black;
+}
+/* buttonai */
+
+/* fontai pradzia */
+
+h1 {
+  font-size: 4rem;
+  font-weight: 200;
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+/* fontai pabaiga */
+
+/* Social media Icons */
+
+.bi {
+  font-size: 32px;
+}
+
+.icon-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.icon-link:hover,
+.icon-link:active {
+  color: #ffe1bd;
+}

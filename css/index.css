@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input:focus {
+  border-color: white;
+}
+
+textarea:focus {
+  border-color: white;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+/* header h1 {
+  color: #404040;
+  font-weight: 100;
+} */
+
+.seperator {
+  width: 35px;
+  border-bottom: 2px solid;
+}
+
+.text-hover:hover {
+  color: #ffe1bd;
+}
+
+.circle-shape {
+  border-radius: 50%;
+  width: 168px;
+  height: 168px;
+  background-color: white;
+}
+.carousel-color {
+  background: #ffe1bd;
+}
+
+.contact-section h1 {
+  color: #bebebe;
+}
+@media (max-width: 768px) {
+  .img-gap {
+    margin-top: 20px;
+  }
+}
+
+/* VERTIKALI KARUSELE */
+
+.carousel-vertical .carousel-item-next:not(.carousel-item-start),
+.carousel-vertical .active.carousel-item-end {
+  transform: translateY(100%);
+}
+
+.carousel-vertical .carousel-item-prev:not(.carousel-item-end),
+.carousel-vertical .active.carousel-item-start {
+  transform: translateY(-100%);
+}
+
+.carousel-indicators-vertical {
+  position: absolute;
+  right: 0;
+  bottom: 50%;
+  left: 0;
+  transform: translateY(50%);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  padding: 0;
+  margin-right: 4%;
+  margin-bottom: 0;
+  margin-left: 0;
+}
